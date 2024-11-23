@@ -1,0 +1,74 @@
+/* 전체 애플리케이션의 기본 스타일 */
+/* App.css의 내용 */
+.App {
+  text-align: center !important;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.App-header {
+  background-color: #f0f8ff !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #282c34;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.App-logo {
+  height: 40vmin !important;
+  pointer-events: none;
+  animation: App-logo-bounce infinite 3s ease-in-out;
+}
+
+@keyframes App-logo-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.App-link {
+  color: #0077cc !important;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #ff5722 !important;
+  text-decoration: underline;
+}
+
+.button {
+  background-color: #0077cc !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005fa3 !important;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+}
